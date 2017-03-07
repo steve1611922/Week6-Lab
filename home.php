@@ -8,7 +8,7 @@
 <body>
 <h1>Hello</h1>
 <?php
-$user = $_GET["$username"];
+$user = $_GET['username'];
 echo "Hello:".$username;
 include('dbClose.php'); // disconnect from db
 ?>
