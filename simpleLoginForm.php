@@ -7,8 +7,9 @@
 </head>
 
 <body>
+<div id="main">
 <h1>PHP Login Form with Session</h1>
-<div class="loginBox">
+<div class="login">
     <h3>Login Form</h3>
     <br><br>
     <form method="post" action="simpleLoginForm.php">
@@ -19,7 +20,7 @@
         <input type="submit" name="submit" value = "login"/>
     </form>
     <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
-
+</div>
 </div>
 </body>
 </html>
