@@ -10,7 +10,7 @@
 <div id="main">
 <h1>PHP Login Form with Session</h1>
 <div class="login">
-    <h3>Login Form</h3>
+    <h2>Login Form</h2>
     <br><br>
     <form method="post" action="simpleLoginForm.php">
         <label>Username:</label><br>
