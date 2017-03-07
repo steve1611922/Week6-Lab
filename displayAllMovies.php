@@ -17,7 +17,8 @@
     // use fetch_array() to return an associative array
     while($row = $result->fetch_array()){
         // print out fields from row of data
-        echo "<p>” . $row('title') . “</p>";
+        $movieTitle = $row["title"];
+        echo "<p>" . $movieTitle . "</p>";
     }
     include('dbClose.php'); // disconnect from db
     ?>
