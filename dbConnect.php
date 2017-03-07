@@ -19,6 +19,6 @@ if (!$link) {
     echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
     exit;
 }
-echo "Connected";
+echo "Connected to ".$connectstr_dbname;
 
 ?>
