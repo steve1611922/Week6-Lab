@@ -10,6 +10,8 @@
 <a href="displayMarvelMovies.php">Display Movies created by Marvel Studios</a><br>
 <a href="displayMoviesAfter2010.php">IDisplay All Movies created after 2010</a><br>
 <a href="displayXmenMovies.php">Display all X-Men Films</a><br>
+<br>
+<a href="simpleLoginForm.php">Simple login Form</a><br>
 
 <p>
     <?php
