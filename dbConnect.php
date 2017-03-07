@@ -1,4 +1,4 @@
-<?
+<?php
 $connectstr_dbhost = '';
 $connectstr_dbname = '';
 $connectstr_dbusername = '';
@@ -19,6 +19,8 @@ if (!$link) {
     echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
     exit;
 }
-//echo "Connected to ".$connectstr_dbname;
-
+echo "Host:".$connectstr_dbhost."<br>";
+echo "User:".$connectstr_dbusername."<br>";
+echo "Password".$connectstr_dbpassword."<br>";
+echo "Database:".$connectstr_dbname."<br>";
 ?>
