@@ -20,6 +20,7 @@
         echo $password;
         $sql="SELECT uid FROM users WHERE username='$username' and password='$password'";
         $result = mysqli_query($db,$sql);
+        echo $result;
         if(mysqli_num_rows($result) == 1)
         {
             header("location: home.php?$username"); // Redirecting To another Page
