@@ -13,6 +13,7 @@
 
 <p>
     <?php
+    include('dbConnect.php'); // Includes Login Script
     // php code goes here
     ?>
 </p>
