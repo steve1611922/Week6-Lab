@@ -11,21 +11,20 @@
         <h1>PHP Login Form with Session</h1>
         <div class="login">
             <h2>Login Form</h2>
-            <br><br>
             <form method="post" action="login.php">
-                <label>Username:</label><br>
-                <input type="text" name="username" placeholder="username" /><br><br>
-                <label>Password:</label><br>
-                <input type="password" name="password" placeholder="password" />  <br><br>
+                <label>Username:</label>
+                <input type="text" name="username" placeholder="username" />
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="password" />
                 <input type="submit" name="submit" value = "login"/>
-            </form>
-            <span id="error">
+                <span id="error">
                 <?php
                 $error = $_GET['error'];
                 echo $error;
                 ?>
-                
             </span>
+            </form>
+
         </div>
     </div>
 </body>
