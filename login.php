@@ -19,6 +19,7 @@
         echo $username;
         echo $password;
         $sql="SELECT uid FROM users WHERE username='".$username."' and password='".'$password."';
+        echo $sql;
         $result = mysqli_query($link,$sql);
         echo $result;
         echo mysql_num_rows($result);
