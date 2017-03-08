@@ -18,8 +18,8 @@
         <label>Password:</label><br>
         <input type="password" name="password" placeholder="password" />  <br><br>
         <input type="submit" name="submit" value = "login"/>
+        <span><?php //echo $error;?><?php //echo $username; echo $password;?></span>
     </form>
-    <span><?php //echo $error;?><?php //echo $username; echo $password;?></span>
 </div>
 </div>
 </body>
