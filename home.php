@@ -9,7 +9,7 @@
 <h1>Hello</h1>
 <?php
 $user = $_GET['username'];
-echo "Hello:".$username;
+echo "Hello:".$user;
 include('dbClose.php'); // disconnect from db
 ?>
 </body>
