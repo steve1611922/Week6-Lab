@@ -12,7 +12,9 @@
     // check login details
     if(empty($_POST["username"]) || empty($_POST["password"]))
     {
-        echo "Both fields are required.";
+        $error = "Both fields are required.";
+        header("location: simpleLoginForm.php?error=".$error); // Redirecting To another Page
+        //echo "Both fields are required.";
     }else {
         $username = $_POST['username'];
         $password = $_POST['password'];
@@ -25,7 +27,9 @@
             header("location: home.php?username=".$username); // Redirecting To another Page
         }else
         {
-            echo "Incorrect username or password.";
+            //echo "Incorrect username or password.";
+            $error = "Incorrect username or password.";
+            header("location: simpleLoginForm.php?error=".$error); // Redirecting To another Page
         }
     }
     ?>
