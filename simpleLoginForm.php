@@ -24,6 +24,7 @@
                 $error = $_GET['error'];
                 echo $error;
                 ?>
+                
             </span>
         </div>
     </div>
