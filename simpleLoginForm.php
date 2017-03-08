@@ -7,25 +7,25 @@
 </head>
 
 <body>
-<div id="main">
-<h1>PHP Login Form with Session</h1>
-<div class="login">
-    <h2>Login Form</h2>
-    <br><br>
-    <form method="post" action="login.php">
-        <label>Username:</label><br>
-        <input type="text" name="username" placeholder="username" /><br><br>
-        <label>Password:</label><br>
-        <input type="password" name="password" placeholder="password" />  <br><br>
-        <input type="submit" name="submit" value = "login"/>
-    </form>
-    <div id="error">
-        <?php
-        $error = $_GET['error'];
-        echo $error;
-        ?>
+    <div id="main">
+        <h1>PHP Login Form with Session</h1>
+        <div class="login">
+            <h2>Login Form</h2>
+            <br><br>
+            <form method="post" action="login.php">
+                <label>Username:</label><br>
+                <input type="text" name="username" placeholder="username" /><br><br>
+                <label>Password:</label><br>
+                <input type="password" name="password" placeholder="password" />  <br><br>
+                <input type="submit" name="submit" value = "login"/>
+            </form>
+            <div id="error">
+                <?php
+                $error = $_GET['error'];
+                echo $error;
+                ?>
+            </div>
+        </div>
     </div>
-</div>
-</div>
 </body>
 </html>

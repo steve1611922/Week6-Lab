@@ -10,8 +10,8 @@ CSS Settings For HTML Div ExactCenter
 span {
     color:red
 }
-#error {color:red}
-#h2 {
+#error { color:red}
+h2 {
     background-color:#FEFFED;
     text-align:center;
     border-radius:10px 10px 0 0;
@@ -25,7 +25,7 @@ hr {
     margin-bottom:30px
 }
 #login {
-    width:50%;
+    width:300px;
     float:left;
     border-radius:10px;
     font-family:raleway;
@@ -34,7 +34,7 @@ hr {
     margin-top:70px
 }
 input[type=text],input[type=password] {
-    width:50%;
+    width:99.5%;
     padding:10px;
     margin-top:8px;
     border:1px solid #ccc;
@@ -43,7 +43,7 @@ input[type=text],input[type=password] {
     font-family:raleway
 }
 input[type=submit] {
-    width:50%;
+    width:100%;
     background-color:#FFBC00;
     color:#fff;
     border:2px solid #FFCB00;
