@@ -25,7 +25,7 @@ hr {
     margin-bottom:30px
 }
 #login {
-    width:25%;
+    width:50%;
     float:left;
     border-radius:10px;
     font-family:raleway;
@@ -34,7 +34,7 @@ hr {
     margin-top:70px
 }
 input[type=text],input[type=password] {
-    width:99.5%;
+    width:50%;
     padding:10px;
     margin-top:8px;
     border:1px solid #ccc;
@@ -43,7 +43,7 @@ input[type=text],input[type=password] {
     font-family:raleway
 }
 input[type=submit] {
-    width:100%;
+    width:50%;
     background-color:#FFBC00;
     color:#fff;
     border:2px solid #FFCB00;
