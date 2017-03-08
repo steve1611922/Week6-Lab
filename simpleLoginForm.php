@@ -19,7 +19,7 @@
         <input type="password" name="password" placeholder="password" />  <br><br>
         <input type="submit" name="submit" value = "login"/>
     </form>
-    <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
+    <span><?php //echo $error;?><?php //echo $username; echo $password;?></span>
 </div>
 </div>
 </body>
