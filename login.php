@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Login</title>
 </head>
 <body>
 <p>
@@ -19,7 +19,7 @@
         echo $username;
         echo $password;
         $sql="SELECT uid FROM users WHERE username=$username and password=$password";
-        $result = mysqli_query($db,$sql);
+        $result = mysqli_query($link,$sql);
         if(mysqli_num_rows($result) == 1)
         {
             header("location: home.php?username=$username"); // Redirecting To another Page
