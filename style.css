@@ -12,7 +12,7 @@ span {
 }
 #error { color:red}
 h2 {
-    background-color:#FEFFED;
+    background-color: #1dffdd;
     text-align:center;
     border-radius:10px 10px 0 0;
     margin:-10px -40px;
@@ -44,9 +44,9 @@ input[type=text],input[type=password] {
 }
 input[type=submit] {
     width:100%;
-    background-color: #279dff;
+    background-color:#FFBC00;
     color:#fff;
-    border:2px solid #ff602a;
+    border:2px solid #FFCB00;
     padding:10px;
     font-size:20px;
     cursor:pointer;
