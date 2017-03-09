@@ -1,5 +1,6 @@
 <?php
 /*** Check the $_GET variable ***/
+$image_id=1;
 if(filter_has_var(INPUT_GET, "image_id") !== false && filter_input(INPUT_GET, 'image_id', FILTER_VALIDATE_INT) !== false)
 {
     /*** set the image_id variable ***/
