@@ -12,6 +12,7 @@
 <a href="displayXmenMovies.php">Display all X-Men Films</a><br>
 <br>
 <a href="simpleLoginForm.php">Simple login Form</a><br>
+<a href="testLoginForm.php">Test HTML login Form</a><br>
 
 <p>
     <?php
