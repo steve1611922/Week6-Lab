@@ -15,14 +15,27 @@
         $error = "Both fields are required.";
         header("location: simpleLoginForm.php?error=".$error); // Redirecting To another Page
         //echo "Both fields are required.";
-    }else {
+    }else
+    {
         $username = $_POST['username'];
         $password = $_POST['password'];
-        echo $password;
-        $sql="SELECT uid FROM users WHERE username='".$username."' and password='".$password."'";
+        //Query with mysqli_*
+        /*$sql="SELECT uid FROM users WHERE username='".$username."' and password='".$password."'";
         $result = mysqli_query($link,$sql);
-        echo mysql_num_rows($result);
         if(mysqli_num_rows($result) == 1)
+        {
+            header("location: home.php?username=".$username); // Redirecting To another Page
+        }else
+        {
+            //echo "Incorrect username or password.";
+            $error = "Incorrect username or password.";
+            header("location: simpleLoginForm.php?error=".$error); // Redirecting To another Page
+        }*/
+        //Query with PDO
+        $sql = 'SELECT uid FROM users WHERE username = :username AND password=:password';
+        $stmt = $pdo->prepare($sql);
+        $result->execute(['username' => $username, 'password' => $password]);
+        if(count($result) == 1)
         {
             header("location: home.php?username=".$username); // Redirecting To another Page
         }else
