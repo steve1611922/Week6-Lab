@@ -6,9 +6,7 @@
 * Insert the data
 */
 /**
- * the upload function
- * @access public
- * @return void
+ * @throws Exception
  */
 function upload(){
     global $link_pdo;  // To make database connection available within function
@@ -23,6 +21,7 @@ function upload(){
         $size = $size[3];
         $name = $_FILES['userfile']['name'];
         $maxsize = 99999999;
+        $ctgy = "test";
 
         /***  check the file is less than the maximum file size ***/
         if($_FILES['userfile']['size'] < $maxsize )
@@ -34,14 +33,15 @@ function upload(){
             /*$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); */
 
             /*** our sql query ***/
-            $stmt = $link_pdo->prepare("INSERT INTO dbimage (image_type ,image, image_size, image_name) VALUES (? ,?, ?, ?)");
+            $stmt = $link_pdo->prepare("INSERT INTO dbimage (image_type ,image, image_size, image_name, image_ctgy) VALUES (? ,?, ?, ?, ?)");
 
             /*** bind the params ***/
             $stmt->bindParam(1, $type);
             $stmt->bindParam(2, $imgfp, PDO::PARAM_LOB);
             $stmt->bindParam(3, $size);
             $stmt->bindParam(4, $name);
-
+            $stmt->bindParam(5, $ctgy);
+            
             /*** execute the query ***/
             $stmt->execute();
         }
