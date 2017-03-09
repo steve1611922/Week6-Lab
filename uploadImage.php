@@ -1,5 +1,6 @@
 <?php
 /*** check if a file was submitted ***/
+// now included in imageUploadForm
     if(!isset($_FILES['userfile']))
     {
         echo '<p>Please select a file</p>';

@@ -13,7 +13,8 @@
 <br>
 <a href="simpleLoginForm.php">Simple login Form</a><br>
 <br>
-<a href="imageUpForm.php">Image Upload</a><br>
+<a href="imageUploadForm.php">Image Upload</a><br>
+<a href="showImage.php">Show Image</a><br>
 
 <p>
     <?php
