@@ -17,7 +17,7 @@
     <?php
         //include('dbConnect.php'); // connect to db
         // php code goes here
-        phpinfo();
+        //phpinfo();
     ?>
 </p>
 </body>
