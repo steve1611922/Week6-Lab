@@ -20,7 +20,7 @@
                 <span id="error">
                 <?php
                     $error = $_GET['error'];
-                    echo $error;
+                    echo "<br>."$error;
                 ?>
             </span>
             </form>
