@@ -43,7 +43,7 @@ input[type=text],input[type=password] {
     font-family:raleway
 }
 input[type=submit] {
-    width:100%;
+    width:50%;
     background-color:#FFBC00;
     color:#fff;
     border:2px solid #FFCB00;
