@@ -9,7 +9,7 @@
 <body>
     <div id="main">
         <h1>PHP Login Form with Session</h1>
-        <div class="login">
+        <div id="login">
             <h2>Login Form</h2>
             <form method="post" action="login.php">
                 <label>Username:</label>
@@ -24,7 +24,6 @@
                 ?>
             </span>
             </form>
-
         </div>
     </div>
 </body>
