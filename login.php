@@ -34,8 +34,8 @@
         //Query with PDO
         $sql = 'SELECT uid FROM users WHERE username = :username AND password=:password';
         $result = $link_pdo->prepare($sql);
-        $result->execute(['username' => $username, 'password' => $password])->fetch();
-        if($result)
+        $result->execute(['username' => $username, 'password' => $password]);
+        if($result->fetch())
         {
             header("location: home.php?username=".$username); // Redirecting To another Page
         }else
