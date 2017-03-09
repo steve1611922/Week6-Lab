@@ -33,7 +33,7 @@
         }*/
         //Query with PDO
         $sql = 'SELECT uid FROM users WHERE username = :username AND password=:password';
-        $stmt = $pdo->prepare($sql);
+        $stmt = $link_pdo->prepare($sql);
         $result->execute(['username' => $username, 'password' => $password]);
         if(count($result) == 1)
         {

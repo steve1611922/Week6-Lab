@@ -43,7 +43,7 @@ try
         $link_pdo = new PDO($dsn, $connectstr_dbusername, $connectstr_dbpassword, $opt);
         echo "Connected to database"; // check for connection
     }
-catch(PDOException $e)
+        catch(PDOException $e)
     {
         echo $e->getMessage();
     }
