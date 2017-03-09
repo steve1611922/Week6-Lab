@@ -31,7 +31,7 @@ if(filter_has_var(INPUT_GET, "image_id") !== false && filter_input(INPUT_GET, 'i
         if(sizeof($array) === 3)
         {
             echo '<p>This is '.$array['image_name'].' from the database</p>';
-            echo '<img '.$array['image_size'].' src="showfile.php?image_id='.$image_id.'">';
+            echo '<img '.$array['image_size'].' src="showImage.php?image_id='.$image_id.'">';
         }
         else
         {
