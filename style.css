@@ -34,7 +34,7 @@ hr {
     margin-top:70px
 }
 input[type=text],input[type=password] {
-    width:99.5%;
+    width:100%;
     padding:10px;
     margin-top:8px;
     border:1px solid #ccc;
@@ -43,7 +43,7 @@ input[type=text],input[type=password] {
     font-family:raleway
 }
 input[type=submit] {
-    width:99.5%;
+    width:100%;
     background-color:#FFBC00;
     color:#fff;
     border:2px solid #FFCB00;
