@@ -6,16 +6,17 @@ if(filter_has_var(INPUT_GET, "image_id") !== false && filter_input(INPUT_GET, 'i
     $image_id = filter_input(INPUT_GET, "image_id", FILTER_SANITIZE_NUMBER_INT);
     try    {
         /*** connect to the database ***/
-        $dbh = new PDO("mysql:host=localhost;dbname=testblob", 'username', 'password');
+        include('dbConnect.php'); // connect to db uses string $link
+        //$dbh = new PDO("mysql:host=localhost;dbname=testblob", 'username', 'password');
 
         /*** set the PDO error mode to exception ***/
-        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        //$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         /*** The sql statement ***/
         $sql = "SELECT image_type, image_size, image_name FROM dbimage WHERE image_id=".$image_id;
 
         /*** prepare the sql ***/
-        $stmt = $dbh->prepare($sql);
+        $stmt = $link_pdo->prepare($sql);
 
         /*** exceute the query ***/
         $stmt->execute();
