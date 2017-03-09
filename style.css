@@ -7,8 +7,10 @@ CSS Settings For HTML Div ExactCenter
     margin:50px auto;
     font-family:raleway
 }
-span { color:red }
-#error { color:red }
+span {
+    color:red
+}
+#error { color:red}
 h2 {
     background-color:#FEFFED;
     text-align:center;
