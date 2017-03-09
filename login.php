@@ -8,7 +8,7 @@
 <p>
     <?php
     // php code goes here
-    include('dbConnect.php'); // connect to db uses string $link
+    include('dbConnect.php'); // connect to db uses string $link_pdo
     // check login details
     if(empty($_POST["username"]) || empty($_POST["password"]))
     {
