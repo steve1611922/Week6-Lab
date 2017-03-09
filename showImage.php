@@ -14,7 +14,7 @@ if(filter_has_var(INPUT_GET, "image_id") !== false && filter_input(INPUT_GET, 'i
         //$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         /*** The sql statement ***/
-        $sql = "SELECT image_type, image_size, image_name FROM testblob WHERE image_id=".$image_id;
+        $sql = "SELECT image_type, image_size, image_name FROM dbimage WHERE image_id=".$image_id;
 
         /*** prepare the sql ***/
         $stmt = $link_pdo->prepare($sql);
