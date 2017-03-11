@@ -71,3 +71,6 @@ a {
 i {
     color:#6495ed
 }
+.btn-group-fill-height .btn {
+    white-space: normal;
+}
