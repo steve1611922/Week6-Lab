@@ -17,6 +17,7 @@
 <a href="imageUploadForm.php" class="btn btn-info" role="button">Image Upload</a><br>
 <a href="view.php" class="btn btn-info" role="button">View Image</a><br>
 
+
 <p>
     <?php
         //include('dbConnect.php'); // connect to db
