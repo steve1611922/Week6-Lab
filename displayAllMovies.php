@@ -26,6 +26,7 @@
      //   echo "<p>" . $movieTitle . "</p>";
     }
     echo "</ul>";
+    
 
     include('dbClose.php'); // disconnect from db
     ?>
