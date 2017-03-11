@@ -15,11 +15,18 @@
     $result = $link_pdo->query($sql_query);
     // iterate over $result object one $row at a time
     // use fetch_array() to return an associative array
+    //<ul class="list-group">
+    //   <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+    //</ul>
+    echo "<ul class='list-group'>";
     while($row = $result->fetch(PDO::FETCH_ASSOC)){
         // print out fields from row of data
         $movieTitle = $row["title"];
-        echo "<p>" . $movieTitle . "</p>";
+        echo "<li class='list-group-item list-group-item-success'>" . $movieTitle . "</li>";
+     //   echo "<p>" . $movieTitle . "</p>";
     }
+    echo "</ul>";
+
     include('dbClose.php'); // disconnect from db
     ?>
 </p>
