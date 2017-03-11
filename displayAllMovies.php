@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Display all Movies</title>
 </head>
 <body>
@@ -18,11 +21,11 @@
     //<ul class="list-group">
     //   <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
     //</ul>
-    echo "<ul class='list-group'></ul><br>";
+    echo "<ul class='list-group'></ul>";
     while($row = $result->fetch(PDO::FETCH_ASSOC)){
         // print out fields from row of data
         $movieTitle = $row["title"];
-        echo "<li class='list-group-item list-group-item-success'>" . $movieTitle . "</li><br>";
+        echo "<li class='list-group-item list-group-item-success'>" . $movieTitle . "</li>";
      //   echo "<p>" . $movieTitle . "</p>";
     }
     echo "</ul>";
