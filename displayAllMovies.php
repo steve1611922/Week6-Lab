@@ -26,11 +26,9 @@
         // print out fields from row of data
         $movieTitle = $row["title"];
         echo "<li class='list-group-item list-group-item-success'>" . $movieTitle . "</li>";
-     //   echo "<p>" . $movieTitle . "</p>";
     }
     echo "</ul>";
     
-
     include('dbClose.php'); // disconnect from db
     ?>
 </p>
