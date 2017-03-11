@@ -15,7 +15,7 @@
     $result = $link_pdo->query($sql_query);
     // iterate over $result object one $row at a time
     // use fetch_array() to return an associative array
-    while($row = $result->fetch()){
+    while($row = $result->fetch(PDO::FETCH_ASSOC)){
         // print out fields from row of data
         $movieTitle = $row["title"];
         echo "<p>" . $movieTitle . "</p>";
