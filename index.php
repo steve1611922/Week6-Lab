@@ -9,7 +9,7 @@
 </head>
 <body>
 <p><h1>Week 6 Tutorials</h1></p><br>
-<div class="btn-group btn-group-lg">
+<div class="btn-group-vertical">
     <a href="displayAllMovies.php" class="btn btn-primary" role="button">Display All Movies</a><br>
     <a href="displayMarvelMovies.php" class="btn btn-primary" role="button">Display Movies created by Marvel Studios</a><br>
     <a href="displayMoviesAfter2010.php" class="btn btn-primary" role="button">Display All Movies created after 2010</a><br>
