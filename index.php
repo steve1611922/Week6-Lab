@@ -6,7 +6,7 @@
     <title>Week 6</title>
 </head>
 <body>
-<p>Week 6 Tutorials</p><br>
+<p><h1>Week 6 Tutorials</h1></p><br>
 <a href="displayAllMovies.php" class="btn btn-info" role="button">Display All Movies</a><br>
 <a href="displayMarvelMovies.php" class="btn btn-info" role="button">Display Movies created by Marvel Studios</a><br>
 <a href="displayMoviesAfter2010.php" class="btn btn-info" role="button">Display All Movies created after 2010</a><br>
