@@ -9,15 +9,15 @@
 </head>
 <body>
 <p><h1>Week 6 Tutorials</h1></p><br>
-<a href="displayAllMovies.php" class="btn btn-info" role="button">Display All Movies</a><br>
-<a href="displayMarvelMovies.php" class="btn btn-info" role="button">Display Movies created by Marvel Studios</a><br>
-<a href="displayMoviesAfter2010.php" class="btn btn-info" role="button">Display All Movies created after 2010</a><br>
-<a href="displayXmenMovies.php" class="btn btn-info" role="button">Display all X-Men Films</a><br>
+<a href="displayAllMovies.php" class="btn btn-primary" role="button">Display All Movies</a><br>
+<a href="displayMarvelMovies.php" class="btn btn-primary" role="button">Display Movies created by Marvel Studios</a><br>
+<a href="displayMoviesAfter2010.php" class="btn btn-primary" role="button">Display All Movies created after 2010</a><br>
+<a href="displayXmenMovies.php" class="btn btn-primary" role="button">Display all X-Men Films</a><br>
 <br>
-<a href="simpleLoginForm.php" class="btn btn-info" role="button">Simple login Form</a><br>
+<a href="simpleLoginForm.php" class="btn btn-primary" role="button">Simple login Form</a><br>
 <br>
-<a href="imageUploadForm.php" class="btn btn-info" role="button">Image Upload</a><br>
-<a href="view.php" class="btn btn-info" role="button">View Image</a><br>
+<a href="imageUploadForm.php" class="btn btn-primary" role="button">Image Upload</a><br>
+<a href="view.php" class="btn btn-primary" role="button">View Image</a><br>
 
 
 <p>
