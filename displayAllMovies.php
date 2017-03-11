@@ -18,11 +18,11 @@
     //<ul class="list-group">
     //   <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
     //</ul>
-    echo "<ul class='list-group'>";
+    echo "<ul class='list-group'></ul><br>";
     while($row = $result->fetch(PDO::FETCH_ASSOC)){
         // print out fields from row of data
         $movieTitle = $row["title"];
-        echo "<li class='list-group-item list-group-item-success'>" . $movieTitle . "</li>";
+        echo "<li class='list-group-item list-group-item-success'>" . $movieTitle . "</li><br>";
      //   echo "<p>" . $movieTitle . "</p>";
     }
     echo "</ul>";
