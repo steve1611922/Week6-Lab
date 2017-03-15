@@ -14,7 +14,7 @@ foreach (hash_algos() as $v) {
  * Beware that DEFAULT may change over time, so you would want to prepare
  * By allowing your storage to expand past 60 characters (255 would be good)
  */
-echo password_hash("hello", PASSWORD_DEFAULT)."\n";
+echo "Defaults:".password_hash("hello", PASSWORD_DEFAULT)."<br>";
 
 /**
  * In this case, we want to increase the default cost for BCRYPT to 12.
@@ -23,7 +23,7 @@ echo password_hash("hello", PASSWORD_DEFAULT)."\n";
 $options = [
     'cost' => 12,
 ];
-echo password_hash("hello", PASSWORD_BCRYPT, $options)."\n";
+echo "Setting a cost:".password_hash("hello", PASSWORD_BCRYPT, $options)."<br>";
 
 /**
  * Note that the salt here is randomly generated.
@@ -35,7 +35,7 @@ $options = [
     'cost' => 11,
     'salt' => mcrypt_create_iv(22, MCRYPT_DEV_URANDOM),
 ];
-echo password_hash("hello", PASSWORD_BCRYPT, $options)."\n";
+echo "Setting a cost and a salt".password_hash("hello", PASSWORD_BCRYPT, $options)."<br>";
 
 /**
  * This code will benchmark your server to determine how high of a cost you can
@@ -54,5 +54,5 @@ do {
     $end = microtime(true);
 } while (($end - $start) < $timeTarget);
 
-echo "Appropriate Cost Found: " . $cost . "\n";
+echo "Appropriate Cost Found: " . $cost . "<br>";
 ?>
