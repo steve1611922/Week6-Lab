@@ -1,5 +1,4 @@
 <?php
-    print_r(hash_algos());
+    echo "<br>".print_r(hash_algos());
 ?>
-
-
+        
