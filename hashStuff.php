@@ -6,5 +6,3 @@ foreach (hash_algos() as $v) {
     printf("%-12s %3d %s\n", $v, strlen($r), $r);
 }
 ?>
-
-
