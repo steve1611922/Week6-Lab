@@ -20,6 +20,7 @@
     <a href="imageUploadForm.php" class="btn btn-primary" role="button">Image Upload</a><br>
     <a href="view.php" class="btn btn-primary" role="button">View Image</a><br>
     <a href="hashStuff.php" class="btn btn-primary" role="button">Hashing Stuff...</a><br>
+    <a href="modalLoginForm.php" class="btn btn-primary" role="button">Modal Login Form</a><br>
 </div>
 
 
